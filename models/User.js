@@ -19,11 +19,11 @@ const userSchema = new Schema(
                 message: props => `${props.value} is not avalide email!`
             }
         },
-        thoughts: {
+        thoughts: [{
             type: Schema.Types.ObjectId,
             ref: 'Thought'
-        },
-        friends: [this.UserSchema]
+        }],
+        friends: [this]
     },
     {
         toJSON: {
@@ -37,6 +37,6 @@ userSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 });
 
-const User = model('User', UserSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
