@@ -13,10 +13,10 @@ const userSchema = new Schema(
             required: true,
             unique: true,
             validate: {
-                validator: function(v) {
-                    return /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(v);
+                validator: function(email) {
+                    return /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email);
                 },
-                message: props => `${props.value} is not avalide email!`
+                message: input => `${input.value} is not avalide email!`
             }
         },
         thoughts: [{
