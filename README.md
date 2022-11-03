@@ -25,7 +25,7 @@ This API contains the following features:
 * Can create reacations to existing thoughts.
 
 Please watch instruction video for detail step by step usage instruction. <br>
-[Instruction Video]()
+[Instruction Video](https://drive.google.com/file/d/104ulg2XV46xiCAuJ38MsPrhUm_iJqvut/view)
 ## License
 This application has the following licenses:
 * [MIT License](https://choosealicense.com/licenses/mit/)
